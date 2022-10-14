@@ -62,16 +62,67 @@
     <h2>Url de interés:</h2>
     <a href="https://github.com/google/material-design-icons/tree/master/font" target="_blank">Descarga iconos</a>
 
+    <h2>Código para utilizar los iconos descargados:</h2>
+    <p>Lassiguientes líneas de código deben de estar en el &lt;head&gt; de la página web.</p>
+    <code>
+        &lt;style&gt;<br>
+        @font-face {<br>
+           &nbsp;font-family: 'Material Icons';<br>
+           &nbsp;font-style: normal;<br>
+           &nbsp;font-weight: 400;<br>
+           &nbsp;src: url(./Fuentes/MaterialIcons-Regular.ttf);<br>
+           &nbsp;/* For IE6-8 */<br>
+           &nbsp;src: local('Material Icons'),<br>
+           &nbsp;&nbsp;local('MaterialIcons-Regular'),<br>
+           &nbsp;&nbsp;/*url(https://example.com/MaterialIcons-Regular.woff2) format('woff2'),<br>
+           &nbsp;&nbsp;url(https://example.com/MaterialIcons-Regular.woff) format('woff'),<br>
+           &nbsp;&nbsp;url(https://example.com/MaterialIcons-Regular.ttf) format('truetype');*/<br>
+        }<br>
+    </code>
+    <p>Para crear la clase material-icons</p>
+    <code>
+        .material-icons {<br>
+            &nbsp;font-family: 'Material Icons';<br>
+            &nbsp;font-weight: normal;<br>
+            &nbsp;font-style: normal;<br>
+            &nbsp;font-size: 24px;<br>
+            &nbsp;/* Preferred icon size */<br>
+            &nbsp;display: inline-block;<br>
+            &nbsp;line-height: 1;<br>
+            &nbsp;text-transform: none;<br>
+            &nbsp;letter-spacing: normal;<br>
+            &nbsp;word-wrap: normal;<br>
+            &nbsp;white-space: nowrap;<br>
+            &nbsp;direction: ltr;<br>
+
+            &nbsp;/* Support for all WebKit browsers. */<br>
+            &nbsp;-webkit-font-smoothing: antialiased;<br>
+            &nbsp;/* Support for Safari and Chrome. */<br>
+            &nbsp;text-rendering: optimizeLegibility;<br>
+
+            &nbsp;/* Support for Firefox. */<br>
+            &nbsp;-moz-osx-font-smoothing: grayscale;<br>
+
+            &nbsp;/* Support for IE. */<br>
+            &nbsp;font-feature-settings: 'liga';<br>
+        }
+        &lt;/style&gt;
+    </code>
+
     <h2>Ejemplo Icono simple:</h2>
     <span class="material-icons">face</span><br>
+    <p>Código:</p>
+    &lt;span class="material-icons"&gt;face&lt;/span&gt;<br>
     <button>Botón</button><br>
+    <p>Código:</p>
+    &lt;button&gt;Botón&lt;button&gt;<br>
     <p>Código:</p>
     <code>&lt;button&gt;&lt;span class="material-icons"&gt;face&lt;/span&gt;&lt;/button&gt;</code>
     <p>Resultado:</p>
     <button><span class="material-icons">face</span></button>
 
     <h2>Lista de hipervínculos:</h2>
-    <ul>
+    <ul style="list-style: none;">
         <li><a href="https://github.com/google/material-design-icons/tree/master/font" target="_blank">
             <span class="material-icons">
                 face
@@ -94,11 +145,40 @@
         </a></li>
     </ul>
 
+    <p>Código para crear hipervínculos en iconos:</p>
+    <code>
+        &lt;a href="https://github.com/google/material-design-icons/tree/master/font" target="_blank"&gt;<br>
+            &nbsp;&lt;span class="material-icons"&gt;<br>
+            &nbsp;&nbsp;face<br>
+            &nbsp;&lt;/span&gt;<br>
+        &lt;/a&gt;<br>
+    </code>
+
     <h2>Ejemplo icono modificando tamaño:</h2>
     <span class="material-icons md-48">face</span>
+    <p>Clase para dar tamaño al icono:</p>
+    <code>
+        .material-icons.md-48 {<br>
+            &nbsp;font-size: 48px;<br>
+        }<br>
+    </code>
+    <p>Código:</p>
+    <code>
+        &lt;span class="material-icons.md-48"&gt;face&lt;/span&gt;<br>
+    </code>
 
     <h2>Ejemplo icono modificando color:</h2>
     <span class="material-icons orange600">face</span>
+    <p>Clase para dar color al icono:</p>
+    <code>
+        .material-icons.orange600 {<br>
+            color: #FB8C00;<br>
+        }<br>
+    </code>
+    <p>Código:</p>
+    <code>
+        &lt;span class="material-icons.orange600"&gt;face&lt;/span&gt;<br>
+    </code>
 </body>
 
 </html>
