@@ -2,10 +2,12 @@
 <html lang="es">
 
 <head>
+    <title>Ejemplo Google Fonst</title>
+
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Ejemplo Google Fonst</title>
+
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -16,11 +18,18 @@
     <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+Gujarati:wght@100&display=swap" rel="stylesheet">
 
     <style>
+        @import url('https://fonts.googleapis.com/css2?family=Noto+Serif+Gujarati:wght@100&display=swap');
+    </style>
+
+    <style>
         .roboto {
             font-family: 'Roboto', sans-serif;
         }
 
         .noto {
+            font-family: 'Noto Serif Gujarati', serif;
+        }
+        .noto2{
             font-family: 'Noto Serif Gujarati', serif;
         }
     </style>
@@ -29,9 +38,11 @@
 <body>
     <h1 class="noto">Título de ejemplo</h1>
     <p class="roboto">Texto de ejemplo texto de ejemplo</p>
+    <p class="noto2">Texto de ejemplo2 texto de ejemplo2</p>
 
     <h2>Código utilizado:</h2>
     <h3>Cabecera:</h3>
+    <p>Enlazando con link:</p>
     <p>Código para la fuente del texto de ejemplo:</p>
     <code>
         &lt;link rel="preconnect" href="https://fonts.googleapis.com"&gt;<br>
@@ -44,6 +55,12 @@
         &lt;link rel="preconnect" href="https://fonts.gstatic.com" crossorigin&gt;<br>
         &lt;link href="https://fonts.googleapis.com/css2?family=Noto+Serif+Gujarati:wght@100&display=swap" rel="stylesheet"&gt;<br>
     </code>
+    <p>Enlazando con @import:</p>
+    <code>
+        &lt;style&gt;
+            @import url('https://fonts.googleapis.com/css2?family=Noto+Serif+Gujarati:wght@100&display=swap');
+        &lt;/style&gt;
+    </code>
     <p>Código dentro de la etiqueta style:</p>
     <code>
         .roboto {<br>
@@ -51,6 +68,10 @@
         }<br>
 
         .noto {<br>
+            &nbsp;&nbsp;font-family: 'Noto Serif Gujarati', serif;<br>
+        }<br>
+        
+        .noto2{<br>
             &nbsp;&nbsp;font-family: 'Noto Serif Gujarati', serif;<br>
         }<br>
     </code>
