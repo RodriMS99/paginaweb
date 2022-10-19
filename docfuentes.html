@@ -18,6 +18,30 @@
         .p3 {
             font-family: "Lucida Console", "Courier New", monospace;
         }
+
+        .arial {
+            font-family: Arial, sans-serif;
+        }
+
+        .verdana {
+            font-family: Verdana, sans-serif;
+        }
+
+        .tahoma {
+            font-family: Tahoma, sans-serif;
+        }
+
+        .tnewroman {
+            font-family: 'Times New Roman', serif;
+        }
+
+        .courier {
+            font-family: 'Courier New', monospace;
+        }
+
+        .brush {
+            font-family: 'Brush Script MT', cursive;
+        }
     </style>
 </head>
 
@@ -76,6 +100,136 @@
     <p class="p2">This is a paragraph, shown in the Arial font.</p>
     <p class="p3">This is a paragraph, shown in the Lucida Console font.</p>
 
+    <hr>
+    <h1>Fuentes web seguras CSS</h1>
+    <h2>¿Qué son las fuentes seguras para la web?</h2>
+    <p>Las fuentes web seguras son fuentes que se instalan universalmente en todos los<br>
+        navegadores y dispositivos.</p>
+    <h2>Fuentes alternativas</h2>
+    <p>Sin embargo, no hay fuetes 100% completamente seguras para la web.</p>
+    <p>Esto significa que debe agregar una lista de "fuentes de respaldo" similares en la font-<br>
+        family propiedad. Si la primera fuente no funciona, el navegador probará con la<br>
+        siguiente, y con la siguiente, y asi sucesivamente. Siempre finalice la lista con un nombre<br>
+        de familia de fuente genérico.</p>
+    <h3>Ejemplo:</h3>
+    <p>Aquí, hay tres tipos de fuentes: Tahona, Verdana y sans-serif. La segunda y tercera<br>
+        fuentes son copias de seguridad, en caso de que no se encuentre la primera.</p>
+    <code>
+        p {<br>
+            &nbsp;&nbsp;font-family: Tahoma, Verdana, sans-serif;<br>
+            }<br>
+    </code>
+    <h2>Las mejores fuentes web seguras para HTML y CSS</h2>
+    <p>La siguiente lista son las mejores fuentes web seguras para HTML y CSS:</p>
+    <ul>
+        <li>Arial (sans-serif)</li>
+        <li>Vernada (sans-serif)</li>
+        <li>Tahona (sans-serif)</li>
+        <li>Trebuchet MS (sans-serif)</li>
+        <li>Times New Roman (serif)</li>
+        <li>Georgia (serif)</li>
+        <li>Garamond (serif)</li>
+        <li>Courier Nuevo (monoespaciado)</li>
+        <li>Brush Script MT (cursiva)</li>
+    </ul>
+    <h2>Arial (sans-serif)</h2>
+    <p>Arial es la fuente más utilizada tanto para medios impresos como en línea. Arial también<br>
+        es la fuente predeterminada en Google Docs.</p>
+    <p>Arial es una de las fuentes web más seguras y está disponible en todos los principales<br>
+        sistemas operativos.</p>
+    <h3>Ejemplo:</h3>
+    <div class="arial">
+        <h1>Lorem ipsum dolor sit amet</h1>
+        <p>Lorem ipsum dolor sit amet.</p>
+        <p>0 1 2 3 4 5 6 7 8 9</p>
+    </div>
+    <h2>Verdana (sans-serif)</h2>
+    <p>Vernada es una fuente muy popular. Verdana es fácilmente legible incluso para tamaños<br>
+        de fuentes pequeños.</p>
+    <h3>Ejemplo:</h3>
+    <div class="verdana">
+        <h1>Lorem ipsum dolor sit amet</h1>
+        <p>Lorem ipsum dolor sit amet.</p>
+        <p>0 1 2 3 4 5 6 7 8 9</p>
+    </div>
+    <h2>Tahoma (sans-serif)</h2>
+    <p>La fuente Tahoma tiene menos espacio entre los caracteres.</p>
+    <h3>Ejemplo:</h3>
+    <div class="tahoma">
+        <h1>Lorem ipsum dolor sit amet</h1>
+        <p>Lorem ipsum dolor sit amet.</p>
+        <p>0 1 2 3 4 5 6 7 8 9</p>
+    </div>
+    <h2>Times New Roman (serif)</h2>
+    <p>Times New Roman es una de las fuentes más reconocibles del mundo. Se ve profesional y<br>
+        se usa en muchos periódicos y sitios web de "noticias". También es la fuente principal<br>
+        para dispositivos y aplicaciones de Windows.</p>
+    <h3>Ejemplo:</h3>
+    <div class="tnewroman">
+        <h1>Lorem ipsum dolor sit amet</h1>
+        <p>Lorem ipsum dolor sit amet.</p>
+        <p>0 1 2 3 4 5 6 7 8 9</p>
+    </div>
+    <h2>Courier Nuevo (monoespaciado)</h2>
+    <p>
+        Courier New es la fuente serif monoespaciada más utilizada. Courier New se usa a<br>
+        menudo con pantallas de codificación, y muchos proveedores de correo electrónico lo<br>
+        usan como su fuente predeterminada. Courier New es también la fuente estándar para<br>
+        guiones de películas.
+    </p>
+    <h3>Ejemplo:</h3>
+    <div class="courier">
+        <h1>Lorem ipsum dolor sit amet</h1>
+        <p>Lorem ipsum dolor sit amet.</p>
+        <p>0 1 2 3 4 5 6 7 8 9</p>
+    </div>
+    <h2>Brush Script MT (cursiva)</h2>
+    <p>
+        La fuente Brush Script MT fue diseñada para imitar la escritura a mano.<br>
+        Es elegante y sofisticado, pero puede ser difícil de leer. Úselo con cuidado.
+    </p>
+    <h3>Ejemplo:</h3>
+    <div class="brush">
+        <h1>Lorem ipsum dolor sit amet</h1>
+        <p>Lorem ipsum dolor sit amet.</p>
+        <p>0 1 2 3 4 5 6 7 8 9</p>
+    </div>
+    <hr>
+    <h2>Estilo de fuentes CSS</h2>
+    <p>La font-style propiedad se utiliza principalmente para especificar texto en cursiva.</p>
+    <p>Esta propiedad tiene tres valores:</p>
+    <ul>
+        <li>normal - El texto se muestra normalmente.</li>
+        <li>cursiva - El texto se muestra en cursiva.</li>
+        <li>oblicua - El texto está "inclinado" (la oblicua es muy similar a la cursiva, pero menos<br>
+            compatible)</li>
+    </ul>
+    <h3>Ejemplo:</h3>
+    <code>
+        p.normal {<br>
+            &nbsp;&nbsp;font-style: normal;<br>
+          }<br>
+          
+          p.italic {<br>
+            &nbsp;&nbsp;font-style: italic;<br>
+          }<br>
+          
+          p.oblique {<br>
+            &nbsp;&nbsp;font-style: oblique;<br>
+          }<br> 
+    </code>
+    <h2>Peso de fuente</h2>
+    <p>La font-weight propiedad especifica el peso de una fuente:</p>
+    <h3>Ejemplo:</h3>
+    <code>
+        p.normal {<br>
+            &nbsp;&nbsp;font-weight: normal;<br>
+          }<br>
+          
+          p.thick {<br>
+            &nbsp;&nbsp;font-weight: bold;<br>
+          }<br>
+    </code>
 </body>
 
 </html>
