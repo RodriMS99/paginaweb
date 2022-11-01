@@ -5,6 +5,16 @@ h1, h2, h3{
     background-color: #668a4c;
 }
 
+.container1>ul{ 
+  list-style-type: none;     
+  overflow: hidden;
+  display:flex;
+  justify-content:space-between;
+}
+.container1{
+  background-color: #668a4c;
+}
+
 /*  
   <color name="primaryColor">#668a4c</color>
   <color name="primaryLightColor">#95ba79</color>
