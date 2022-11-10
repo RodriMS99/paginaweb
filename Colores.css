@@ -14,6 +14,15 @@ h1, h2, h3{
 .container1{
   background-color: #668a4c;
 }
+.Tema a{
+  color:black;
+}
+.Tema a:link {
+  text-decoration: none;
+}
+.Tema a:visited {
+  text-decoration: none;
+}
 
 /*  
   <color name="primaryColor">#668a4c</color>
