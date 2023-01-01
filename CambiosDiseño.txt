@@ -1,0 +1,7 @@
+bootstrap y material en el tema 2
+Quitar hipervículos del album de bootstrap
+Pasar la guía de estilos a PDF
+Quitar los rótulos 
+Y cambiar diseño de los PDFs
+Quitar encambezado de la portada de los PDF
+Resaltar las fuentes y tamaños
