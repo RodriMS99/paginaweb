@@ -1,0 +1,25 @@
+.flex-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  align-items: center;
+  overflow: scroll;
+}
+
+.flex-container>div{
+  background-color: #f1f1f1;
+  width: 200px;
+  height: 200px;
+  margin: 3px;
+  box-shadow: 5px 5px gray;
+  text-align: center;
+  line-height: 75px;
+  font-size: 30px;
+}
+
+img{
+  width: 100%;
+  height: 100%;
+}
+
+
