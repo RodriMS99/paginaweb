@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio insertar video con controles personalizados</title>
+    <link rel = "stylesheet" href = "style.css" type = "text/css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+   
+</head>
+<body>
+    <div class = "flex-container">
+        <video width="480" height="320" controls="controls" id="myVideo"> 
+            <source src = "movie_clip.mp4" type = "video/mp4"/>
+            <source src = "movie_clip.ogg" type = "video/ogg"/>
+            Error al cargar el video
+        </video>
+        <div class = "botones">
+            <div class = "play"><button onclick="playVideo();"><span class="material-icons">play_arrow</span></button></div>
+            <div class = "pause"><button onclick="pausesVideo();"><span class="material-icons">pause</span></button></div>
+            <div class = "stop"><button onclick="stopVideo();"><span class="material-icons">stop</span></button></div>
+            <div class = "rewind"><button onclick="rewindVideo();"><span class="material-icons">fast_rewind</span></button></div>
+        </div>    
+    </div>
+    <script>
+        thevideo = document.querySelector("#myVideo");
+
+        function playVideo(){
+            thevideo.play();
+        }
+
+        function pausesVideo(){
+            thevideo.pause();
+        }
+
+        function stopVideo(){
+            thevideo.currentTime = 0;
+            thevideo.pause();
+        }
+
+        function rewindVideo(){
+            thevideo.currentTime = 0;
+        }
+    </script>
+</body>
+</html>
