@@ -12,8 +12,8 @@
 <body>
     <div class = "flex-container">
         <video width="480" height="320" controls="controls" id="myVideo"> 
-            <source src = "movie_clip.mp4" type = "video/mp4"/>
-            <source src = "movie_clip.ogg" type = "video/ogg"/>
+            <source src="https://storage.googleapis.com/webfundamentals-assets/videos/chrome.webm" type="video/webm" />
+            <source src="https://storage.googleapis.com/webfundamentals-assets/videos/chrome.mp4" type="video/mp4" />
             <track src="chrome-subtitles-en.vtt" label="English captions" kind="captions" srclang="en" default>
             <track src="chrome-subtitles-zh.vtt" label="中文字幕" kind="captions" srclang="zh">
             Error al cargar el video
@@ -25,14 +25,6 @@
             <div class = "rewind"><button onclick="rewindVideo();"><span class="material-icons">fast_rewind</span></button></div>
         </div>    
     </div>
-
-    <video controls>
-        <source src="https://storage.googleapis.com/webfundamentals-assets/videos/chrome.webm" type="video/webm" />
-        <source src="https://storage.googleapis.com/webfundamentals-assets/videos/chrome.mp4" type="video/mp4" />
-        <track src="chrome-subtitles-en.vtt" label="English captions" kind="captions" srclang="en" default>
-        <track src="chrome-subtitles-zh.vtt" label="中文字幕" kind="captions" srclang="zh">
-        <p>This browser does not support the video element.</p>
-    </video>
 
     <script>
         thevideo = document.querySelector("#myVideo");
