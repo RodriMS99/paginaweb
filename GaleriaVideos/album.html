@@ -1,0 +1,501 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors">
+    <meta name="generator" content="Hugo 0.104.2">
+    <title>Album example · Bootstrap v5.2</title>
+
+    <link rel="canonical" href="https://getbootstrap.com/docs/5.2/examples/album/">
+
+    <link href="bootstrap.min.css" rel="stylesheet">
+
+    <style>
+      .bd-placeholder-img {
+        font-size: 1.125rem;
+        text-anchor: middle;
+        -webkit-user-select: none;
+        -moz-user-select: none;
+        user-select: none;
+      }
+
+      @media (min-width: 768px) {
+        .bd-placeholder-img-lg {
+          font-size: 3.5rem;
+        }
+      }
+
+      .b-example-divider {
+        height: 3rem;
+        background-color: rgba(0, 0, 0, .1);
+        border: solid rgba(0, 0, 0, .15);
+        border-width: 1px 0;
+        box-shadow: inset 0 .5em 1.5em rgba(0, 0, 0, .1), inset 0 .125em .5em rgba(0, 0, 0, .15);
+      }
+
+      .b-example-vr {
+        flex-shrink: 0;
+        width: 1.5rem;
+        height: 100vh;
+      }
+
+      .bi {
+        vertical-align: -.125em;
+        fill: currentColor;
+      }
+
+      .nav-scroller {
+        position: relative;
+        z-index: 2;
+        height: 2.75rem;
+        overflow-y: hidden;
+      }
+
+      .nav-scroller .nav {
+        display: flex;
+        flex-wrap: nowrap;
+        padding-bottom: 1rem;
+        margin-top: -1px;
+        overflow-x: auto;
+        text-align: center;
+        white-space: nowrap;
+        -webkit-overflow-scrolling: touch;
+      }
+
+
+.blur {
+  -webkit-filter: blur(3px);
+  -moz-filter: blur(3px);
+  -o-filter: blur(3px);
+  -ms-filter: blur(3px);
+  filter: blur(3px);
+}
+.brightness {
+  -webkit-filter: brightness(5);
+  -moz-filter: brightness(5);
+  -o-filter: brightness(5);
+  -ms-filter: brightness(5);
+  filter: brightness(5);
+}
+.contrast {
+  -webkit-filter: contrast(8);
+  -moz-filter: contrast(8);
+  -o-filter: contrast(8);
+  -ms-filter: contrast(8);
+  filter: contrast(8);
+}
+.hue-rotate {
+  -webkit-filter: hue-rotate(90deg);
+  -moz-filter: hue-rotate(90deg);
+  -o-filter: hue-rotate(90deg);
+  -ms-filter: hue-rotate(90deg);
+  filter: hue-rotate(90deg);
+}
+.hue-rotate2 {
+  -webkit-filter: hue-rotate(180deg);
+  -moz-filter: hue-rotate(180deg);
+  -o-filter: hue-rotate(180deg);
+  -ms-filter: hue-rotate(180deg);
+  filter: hue-rotate(180deg);
+}
+.hue-rotate3 {
+  -webkit-filter: hue-rotate(270deg);
+  -moz-filter: hue-rotate(270deg);
+  -o-filter: hue-rotate(270deg);
+  -ms-filter: hue-rotate(270deg);
+  filter: hue-rotate(270deg);
+}
+.saturate {
+  -webkit-filter: saturate(10);
+  -moz-filter: saturate(10);
+  -o-filter: saturate(10);
+  -ms-filter: saturate(10);
+  filter: saturate(10);
+}
+.grayscale {
+  -webkit-filter: grayscale(1);
+  -moz-filter: grayscale(1);
+  -o-filter: grayscale(1);
+  -ms-filter: grayscale(1);
+  filter: grayscale(1);
+}
+.sepia {
+  -webkit-filter: sepia(1);
+  -moz-filter: sepia(1);
+  -o-filter: sepia(1);
+  -ms-filter: sepia(1);
+  filter: sepia(1);
+}
+.invert {
+  -webkit-filter: invert(1);
+  -moz-filter: invert(1);
+  -o-filter: invert(1);
+  -ms-filter: invert(1);
+  filter: invert(1);
+} 
+    </style> 
+
+    
+  </head>
+  <body>
+    
+<header>
+  <div class="collapse bg-dark" id="navbarHeader">
+    <div class="container">
+      <div class="row">
+        <div class="col-sm-8 col-md-7 py-4">
+          <h4 class="text-white">About</h4>
+          <p class="text-muted">Add some information about the album below, the author, or any other background context. Make it a few sentences long so folks can pick up some informative tidbits. Then, link them off to some social networking sites or contact information.</p>
+        </div>
+        <div class="col-sm-4 offset-md-1 py-4">
+          <h4 class="text-white">Contact</h4>
+          <ul class="list-unstyled">
+            <li><a href="#" class="text-white">Follow on Twitter</a></li>
+            <li><a href="#" class="text-white">Like on Facebook</a></li>
+            <li><a href="#" class="text-white">Email me</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="navbar navbar-dark bg-dark shadow-sm">
+    <div class="container">
+      <a href="#" class="navbar-brand d-flex align-items-center">
+        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" aria-hidden="true" class="me-2" viewBox="0 0 24 24"><path d="M23 19a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h4l2-3h6l2 3h4a2 2 0 0 1 2 2z"/><circle cx="12" cy="13" r="4"/></svg>
+        <strong>Album</strong>
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarHeader" aria-controls="navbarHeader" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+    </div>
+  </div>
+</header>
+
+<main>
+
+  <section class="py-5 text-center container">
+    <div class="row py-lg-5">
+      <div class="col-lg-6 col-md-8 mx-auto">
+        <h1 class="fw-light">GALERÍA DE VÍDEOS</h1>
+        <p class="lead text-muted">Something short and leading about the collection below—its contents, the creator, etc. Make it short and sweet, but not too short so folks don’t simply skip over it entirely.</p>
+        <p>
+          <a href="#" class="btn btn-primary my-2">Main call to action</a>
+          <a href="#" class="btn btn-secondary my-2">Secondary action</a>
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <div class="album py-5 bg-light">
+    <div class="container">
+
+      <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
+        <div class="col">
+          <div class="card shadow-sm">
+            <video width="100%" height="225" controls="controls" id="myVideo">
+                <source src="movie_clip.mp4" type="video/mp4" />
+                <source src="movie_clip.ogg" type="video/ogg" />
+                Your browser does not support the element. 
+             </video>
+
+            <div class="card-body">
+                <h1>Example of custom controls</h1>
+                <button onclick="playVideo1();" class="btn btn-success">
+                    Play <i class="glyphicon glyphicon-play"></i>
+                </button>
+                <button onclick="pauseVideo1();" class="btn btn-warning">
+                    Pause <i class="glyphicon glyphicon-pause"></i>
+                </button>
+                <button onclick="stopVideo1()" class="btn btn-danger">
+                    Stop <i class="glyphicon glyphicon-stop"></i>
+                </button> 
+                <button onclick="rewindVideo1();"  class="btn btn-info">
+                    Rewind <i class="glyphicon glyphicon-fast-backward"></i>
+                </button>
+            </div>
+          </div>
+          
+        </div>
+
+        
+
+        <div class="col">
+          <div class="card shadow-sm">
+            <video  width="100%" height="225" controls="controls" id="myVideo2">
+                <source src="movie_clip.mp4" type="video/mp4" />
+                <source src="movie_clip.ogg" type="video/ogg" />
+                    Your browser does not support the element. 
+            </video>
+            <div class="card-body">
+                <h1>Example of video events</h1>
+                <h3 id="status">Status</h3>
+                <h4 id="info">Info</h4>
+            </div>
+          </div>
+        </div>
+        
+
+        <div class="col">
+          <div class="card shadow-sm">
+            <video width="100%" height="225" controls="controls" id="myVideo3">
+                 Your browser does not support the element. 
+            </video>
+            <div class="card-body">
+                <h1>Video player with playlist</h1>
+                <button onclick="playVideo3();" class="btn btn-success">
+                    Play <i class="glyphicon glyphicon-play"></i>
+                </button>
+                <button onclick="pauseVideo3();" class="btn btn-warning">
+                    Pause <i class="glyphicon glyphicon-pause"></i>
+                </button>
+                <button onclick="previous3()" class="btn btn-info">
+                    Previous <i class="glyphicon glyphicon-fast-backward"></i>
+                </button> 
+                <button onclick="next3();"  class="btn btn-info">
+                    Next <i class="glyphicon glyphicon-fast-forward"></i>
+                </button> 
+                <div id="info"></div>
+            </div>
+          </div>
+        </div>
+
+
+        <div class="col">
+          <div class="card shadow-sm">
+            
+            <video width="100%" height="225" controls="controls" id="myVideo4">
+                <source src="movie_clip2.mp4" type="video/mp4">         
+                <source src="movie_clip2.ogg" type="video/ogg">         
+                  <p>Your browser does not support HTML5 video
+                  </p>         
+              </video>
+
+            <div class="card-body">
+                <button onclick="playVideo4();" class="btn btn-success">
+                    Play <i class="glyphicon glyphicon-play"></i>
+                </button>
+                <button onclick="pauseVideo4();" class="btn btn-warning">
+                    Pause <i class="glyphicon glyphicon-pause"></i>
+                </button>
+                <button onclick="zoomIn4();"  class="btn btn-info">
+                   <i class="glyphicon glyphicon-zoom-in"></i>
+                </button>
+                <button onclick="zoomOut4();"  class="btn btn-info">
+                   <i class="glyphicon glyphicon-zoom-out"></i>
+                </button>
+                <button onclick="rotateLeft4();"  class="btn btn-info">
+                   <i class="glyphicon glyphicon-repeat"></i>
+                </button>
+                <button onclick="rotateRight4();"  class="btn btn-info">
+                   <i class="glyphicon glyphicon-repeat"></i>
+                </button>
+            </div>
+          </div>
+        </div>
+  
+
+        <div class="col">
+          <div class="card shadow-sm">
+            <video id="output" width="100%" height="225" controls autoplay> 
+                <!-- I have three versions of the video encoded with
+                     different codecs.  The browser will automatically
+                     choose the first one it knows it can play. --> 
+                <source src=http://html5doctor.com/demos/video-canvas-magic/video.webm type=video/webm> 
+                <source src=http://html5doctor.com/demos/video-canvas-magic/video.ogg type=video/ogg> 
+                <source src=http://html5doctor.com/demos/video-canvas-magic/video.mp4 type=video/mp4> 
+            </video> 
+            <div class="card-body">
+                <h1>Click the video to apply CSS3 effects!</h1>
+            </div>
+          </div>
+        </div>
+  
+
+        <div class="col">
+          <div class="card shadow-sm">
+            <video width="100%" height="225" controls="controls" id="myVideo5">
+                <source src="movie_clip2.mp4" type="video/mp4" />
+                <source src="movie_clip2.ogg" type="video/ogg" />
+                <track kind=captions src=movie_clip2.en.vtt
+                       srclang=en
+                       lang=en 
+                       label="English" default>
+                <track kind=captions src=movie_clip2.es.vtt
+                       srclang=es
+                       lang=es
+                       label="Spanish">
+                </video>
+            <div class="card-body">
+                <h1>Example of subtitles</h1>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+</main>
+
+<footer class="text-muted py-5">
+  <div class="container">
+    <p class="float-end mb-1">
+      <a href="#">Back to top</a>
+    </p>
+    <p class="mb-1">Album example is &copy; Bootstrap, but please download and customize it for yourself!</p>
+    <p class="mb-0">New to Bootstrap? <a href="/">Visit the homepage</a> or read our <a href="../getting-started/introduction/">getting started guide</a>.</p>
+  </div>
+</footer>
+
+
+    <script src="bootstrap.bundle.min.js"></script>
+    <!-- Script vídeo 1 -->
+    <script>
+        theVideo1 = document.querySelector("#myVideo");
+    
+        function playVideo1() {
+           theVideo1.play();
+        }
+        
+        function pauseVideo1() {
+           theVideo1.pause();
+        }
+    
+        function stopVideo1() {
+           theVideo1.currentTime = 0;
+           theVideo1.pause();
+        }
+        
+        function rewindVideo1() {
+           theVideo1.currentTime = 0;
+        }
+    </script>
+      <!-- Script vídeo 2 -->
+       <script type='text/javascript'>   
+        var theVideo2 = document.querySelector('#myVideo2');
+        
+        // We add listeners
+        theVideo2.addEventListener('play', videoPlaying2, false);
+        theVideo2.addEventListener('ended', videoEnded2, false);
+        theVideo2.addEventListener('timeupdate', videoTimeUpdate2, false);
+          
+        function videoPlaying2 (e) {
+          var status = document.querySelector('#status');
+          status.innerHTML = 'Video is playing';
+        }
+        
+        function videoEnded2 (e) {
+           var status = document.querySelector('#status');
+           status.innerHTML = 'End of the video';
+        }
+        
+        function videoTimeUpdate2 (e) {
+            var info = document.querySelector('#info');
+            info.innerHTML = theVideo2.currentTime;
+        }
+      </script>
+       
+       <!-- Script vídeo 3 -->
+      <script type='text/javascript'>
+        theVideo3 = document.querySelector("#myVideo3");
+        info = document.querySelector("#info");
+        var videos = ['movie_clip', 'movie_clip2', 'movie_clip3'];
+        var current = 0;
+    
+        function playVideo3() {
+            // The simplest way:
+            //theVideo.src = videos[current] + '.mp4';
+            
+            // adding suppor for various formats
+           theVideo3.innerHTML = "";
+           theVideo3.innerHTML = "<source src='"+videos[current]+".mp4' type='video/mp4'>";
+           theVideo3.innerHTML += "<source src='"+videos[current]+".ogg' type='video/ogg'>";
+           theVideo3.load();
+           theVideo3.play();
+           info.innerHTML = 'Now playing ' + videos[current];
+        }
+        
+        function pauseVideo3() {
+           theVideo3.pause();
+           info.innerHTML = videos[current] + ' paused';
+        }
+    
+        function previous3() {
+            if (current > 0) {
+                current--;
+            }
+            playVideo3();
+        }
+        
+        function next3() {
+            if (current < videos.length-1) {
+                current++;
+            }
+            playVideo3();
+        }
+    </script>
+     <!-- Script vídeo 4 -->
+    <script type='text/javascript'>
+        theVideo4 = document.querySelector("#myVideo4");
+        var zoom = 0;
+        
+        function playVideo4() {
+           theVideo4.play();
+        }
+        
+        function pauseVideo4() {
+          theVideo4.pause();
+        }
+        
+        function zoomIn4() {
+            zoom = zoom + 0.1;
+            theVideo4.style.transform = 'scale('+zoom+')';
+        }
+        
+        function zoomOut4() {
+            zoom = zoom - 0.1;
+            theVideo.style.transform = 'scale('+zoom+')';
+        }
+        
+        function rotateLeft4() {
+        
+        }
+        
+        function rotateRight4() {
+        
+        }
+        </script>
+         <!-- Script vídeo 5  -->
+        <script>
+
+            var output = document.getElementById('output');
+          
+            var idx = 0;
+            var filters = [
+              'grayscale',
+              'sepia',
+              'blur',
+              'brightness',
+              'contrast',
+              'hue-rotate', 'hue-rotate2', 'hue-rotate3',
+              'saturate',
+              'invert',
+              ''
+            ];
+            
+            function changeFilter(e) {
+              var el = e.target;
+              var effect = filters[idx++ % filters.length];
+              if (effect) {
+                el.className = effect;
+              }
+              // Do not propagate the event
+              event.stopPropagation();    
+              event.preventDefault(); 
+            }
+            
+            output.addEventListener('click', changeFilter, false);
+          </script> 
+  </body>
+</html>

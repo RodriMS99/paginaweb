@@ -1,0 +1,552 @@
+$color-primario: #5D4037;
+$color-primario-light: #8B6B61;
+$color-primario-dark: #321911;
+
+$color-secundario: #FF9800;
+$color-secundario-light: #FFC947;
+$color-secundario-dark: #C66900;
+
+$color-texto: rgb(0, 0, 0);
+$color-texto-alternativo: rgb(255, 255, 255);
+
+$espaciado-estandar: 10px;
+$espaciado-doble: 20px;
+
+$fuente-normal: 1em;
+$fuente-pequena: 0.8em;
+$fuente-grande: 1.4em;
+
+// $tipografia-general: arial, verdana, sans-serif;
+// $tipografia-alternativa: 'Times New Roman', Times, serif;
+
+
+.flex-container{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+}
+
+.tarjeta1{
+  background-color: $color-primario;
+  color: $color-texto-alternativo;
+  margin-top: 15px;
+  margin-left: 15px;
+  margin-left: 15px;
+  margin-bottom: 15px;
+  border-radius: 1em;
+  // width: 400px;
+  // height: 700px;
+}
+
+.tarjeta1 > .encabezado{
+  margin-left: 15px;
+  margin-top: 15px;
+  display: flex;
+  justify-content: space-around;
+}
+
+.tarjeta1 > .encabezado > .perfil{
+  border-radius: 50%;
+}
+
+.tarjeta1 > .imagen > img{
+  width: 100%;
+}
+
+.tarjeta1 > .encabezado > .titulos{
+  display: flex;
+  flex-direction: column;
+}
+
+.tarjeta1 > .encabezado > .perfil > img{
+    width: 50px;
+    height: 50px;
+    border-radius:150px;
+}
+
+.tarjeta1 > .botones{
+  margin-left: 10px;
+  margin-bottom: 10px;
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.tarjeta1 > .botones > .boton1{
+  background-color: $color-secundario-light;
+}
+
+.tarjeta1 > .botones > .boton1:hover{
+  background-color: $color-secundario-dark;
+}
+
+.tarjeta1 > .botones > .boton2{
+  background-color: $color-secundario-light;
+}
+
+.tarjeta1 > .botones > .boton2:hover{
+  background-color: $color-secundario-dark;
+}
+
+.tarjeta1 > .botones > .boton3{
+  background-color: $color-secundario-light;
+}
+
+.tarjeta1 > .botones > .boton3:hover{
+  background-color: $color-secundario-dark;
+}
+
+.tarjeta1 > .botones > .boton1 > a{
+  color:black;
+}
+.tarjeta1 > .botones > .boton1 > a:link {
+  text-decoration: none;
+}
+.tarjeta1 > .botones > .boton1 > a:visited {
+  text-decoration: none;
+}
+
+.tarjeta1 > .descripcion{
+  margin-left: 10px;
+  margin-bottom: 10px;
+  display: flex;
+  justify-content: center;
+}
+
+.tarjeta2{
+  background-color: $color-primario;
+  color: $color-texto-alternativo;
+  margin-top: 15px;
+  margin-left: 15px;
+  margin-left: 15px;
+  margin-bottom: 15px;
+  border-radius: 1em;
+  // width: 400px;
+  // height: 700px;
+}
+
+.tarjeta2 > .encabezado{
+  margin-left: 15px;
+  margin-top: 15px;
+  display: flex;
+  justify-content: space-around;
+}
+
+.tarjeta2 > .encabezado > .perfil{
+  border-radius: 50%;
+}
+
+.tarjeta2 > .descripcion > p{
+  text-align: justify;
+}
+
+.tarjeta2 > .imagen > img{
+  width: 100%;
+  height: 175px;
+}
+
+.tarjeta2 > .encabezado > .titulos{
+  display: flex;
+  flex-direction: column;
+}
+
+.tarjeta2 > .encabezado > .perfil > img{
+    width: 50px;
+    height: 50px;
+    border-radius:150px;
+}
+
+.tarjeta2 > .botones{
+  margin-left: 10px;
+  margin-bottom: 10px;
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.tarjeta2 > .botones > .boton1{
+  background-color: $color-secundario-light;
+}
+
+.tarjeta2 > .botones > .boton1:hover{
+  background-color: $color-secundario-dark;
+}
+
+.tarjeta2 > .botones > .boton2{
+  background-color: $color-secundario-light;
+}
+
+.tarjeta2 > .botones > .boton2:hover{
+  background-color: $color-secundario-dark;
+}
+
+.tarjeta2 > .botones > .boton3{
+  background-color: $color-secundario-light;
+}
+
+.tarjeta2 > .botones > .boton3:hover{
+  background-color: $color-secundario-dark;
+}
+
+.tarjeta2 > .botones > .boton1 > a{
+  color:black;
+}
+.tarjeta2 > .botones > .boton1 > a:link {
+  text-decoration: none;
+}
+.tarjeta2 > .botones > .boton1 > a:visited {
+  text-decoration: none;
+}
+
+.tarjeta2 > .descripcion{
+  margin-left: 10px;
+  margin-bottom: 10px;
+  display: flex;
+  justify-content: center;
+}
+
+.tarjeta3{
+  background-color: $color-primario;
+  color: $color-texto-alternativo;
+  margin-top: 15px;
+  margin-left: 15px;
+  margin-left: 15px;
+  margin-bottom: 15px;
+  border-radius: 1em;
+  // width: 400px;
+  // height: 700px;
+}
+
+.tarjeta3 > .encabezado{
+  margin-left: 15px;
+  margin-top: 15px;
+  display: flex;
+  justify-content: space-around;
+}
+
+.tarjeta3 > .encabezado > .perfil{
+  border-radius: 50%;
+}
+
+.tarjeta3 > .imagen > img{
+  width: 100%;
+  height: 175px;
+}
+
+.tarjeta3 > .encabezado > .titulos{
+  display: flex;
+  flex-direction: column;
+}
+
+.tarjeta3 > .encabezado > .perfil > img{
+    width: 50px;
+    height: 50px;
+    border-radius:150px;
+}
+
+.tarjeta3 > .botones{
+  margin-left: 10px;
+  margin-bottom: 10px;
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.tarjeta3 > .botones > .boton1{
+  background-color: $color-secundario-light;
+}
+
+.tarjeta3 > .botones > .boton1:hover{
+  background-color: $color-secundario-dark;
+}
+
+.tarjeta3 > .botones > .boton2{
+  background-color: $color-secundario-light;
+}
+
+.tarjeta3 > .botones > .boton2:hover{
+  background-color: $color-secundario-dark;
+}
+
+.tarjeta3 > .botones > .boton3{
+  background-color: $color-secundario-light;
+}
+
+.tarjeta3 > .botones > .boton3:hover{
+  background-color: $color-secundario-dark;
+}
+
+.tarjeta3 > .botones > .boton1 > a{
+  color:black;
+}
+.tarjeta3 > .botones > .boton1 > a:link {
+  text-decoration: none;
+}
+.tarjeta3 > .botones > .boton1 > a:visited {
+  text-decoration: none;
+}
+
+.tarjeta3 > .descripcion{
+  margin-left: 10px;
+  margin-bottom: 10px;
+  display: flex;
+  justify-content: center;
+}
+
+.tarjeta4{
+  background-color: $color-primario;
+  color: $color-texto-alternativo;
+  margin-top: 15px;
+  margin-left: 15px;
+  margin-left: 15px;
+  margin-bottom: 15px;
+  border-radius: 1em;
+  // width: 400px;
+  // height: 700px;
+}
+
+.tarjeta4 > .encabezado{
+  margin-left: 15px;
+  margin-top: 15px;
+  display: flex;
+  justify-content: space-around;
+}
+
+.tarjeta4 > .encabezado > .perfil{
+  border-radius: 50%;
+}
+
+.tarjeta4 > .imagen > img{
+  width: 100%;
+  height: 175px;
+}
+
+.tarjeta4 > .encabezado > .titulos{
+  display: flex;
+  flex-direction: column;
+}
+
+.tarjeta4 > .encabezado > .perfil > img{
+    width: 50px;
+    height: 50px;
+    border-radius:150px;
+}
+
+.tarjeta4 > .botones{
+  margin-left: 10px;
+  margin-bottom: 10px;
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.tarjeta4 > .botones > .boton1{
+  background-color: $color-secundario-light;
+}
+
+.tarjeta4 > .botones > .boton1:hover{
+  background-color: $color-secundario-dark;
+}
+
+.tarjeta4 > .botones > .boton2{
+  background-color: $color-secundario-light;
+}
+
+.tarjeta4 > .botones > .boton2:hover{
+  background-color: $color-secundario-dark;
+}
+
+.tarjeta4 > .botones > .boton3{
+  background-color: $color-secundario-light;
+}
+
+.tarjeta4 > .botones > .boton3:hover{
+  background-color: $color-secundario-dark;
+}
+
+.tarjeta4 > .botones > .boton1 > a{
+  color:black;
+}
+.tarjeta4 > .botones > .boton1 > a:link {
+  text-decoration: none;
+}
+.tarjeta4 > .botones > .boton1 > a:visited {
+  text-decoration: none;
+}
+
+.tarjeta4 > .descripcion{
+  margin-left: 10px;
+  margin-bottom: 10px;
+  display: flex;
+  justify-content: center;
+}
+
+.tarjeta5{
+  background-color: $color-primario;
+  color: $color-texto-alternativo;
+  margin-top: 15px;
+  margin-left: 15px;
+  margin-left: 15px;
+  margin-bottom: 15px;
+  border-radius: 1em;
+  // width: 400px;
+  // height: 700px;
+}
+
+.tarjeta5 > .encabezado{
+  margin-left: 15px;
+  margin-top: 15px;
+  display: flex;
+  justify-content: space-around;
+}
+
+.tarjeta5 > .encabezado > .perfil{
+  border-radius: 50%;
+}
+
+.tarjeta5 > .imagen > img{
+  width: 100%;
+  height: 300px;
+}
+
+.tarjeta5 > .encabezado > .titulos{
+  display: flex;
+  flex-direction: column;
+}
+
+.tarjeta5 > .encabezado > .perfil > img{
+    width: 50px;
+    height: 50px;
+    border-radius:150px;
+}
+
+.tarjeta5 > .botones{
+  margin-left: 10px;
+  margin-bottom: 10px;
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.tarjeta5 > .botones > .boton1{
+  background-color: $color-secundario-light;
+}
+
+.tarjeta5 > .botones > .boton1:hover{
+  background-color: $color-secundario-dark;
+}
+
+.tarjeta5 > .botones > .boton2{
+  background-color: $color-secundario-light;
+}
+
+.tarjeta5 > .botones > .boton2:hover{
+  background-color: $color-secundario-dark;
+}
+
+.tarjeta5 > .botones > .boton3{
+  background-color: $color-secundario-light;
+}
+
+.tarjeta5 > .botones > .boton3:hover{
+  background-color: $color-secundario-dark;
+}
+
+.tarjeta5 > .botones > .boton1 > a{
+  color:black;
+}
+.tarjeta5 > .botones > .boton1 > a:link {
+  text-decoration: none;
+}
+.tarjeta5 > .botones > .boton1 > a:visited {
+  text-decoration: none;
+}
+
+.tarjeta5 > .descripcion{
+  margin-left: 10px;
+  margin-bottom: 10px;
+  display: flex;
+  justify-content: center;
+}
+
+.tarjeta6{
+  background-color: $color-primario;
+  color: $color-texto-alternativo;
+  margin-top: 15px;
+  margin-left: 15px;
+  margin-left: 15px;
+  margin-bottom: 15px;
+  border-radius: 1em;
+  // width: 400px;
+  // height: 700px;
+}
+
+.tarjeta6 > .encabezado{
+  margin-left: 15px;
+  margin-top: 15px;
+  display: flex;
+  justify-content: space-around;
+}
+
+.tarjeta6 > .encabezado > .perfil{
+  border-radius: 50%;
+}
+
+.tarjeta6 > .imagen > img{
+  width: 100%;
+  height: 225px;
+}
+
+.tarjeta6 > .encabezado > .titulos{
+  display: flex;
+  flex-direction: column;
+}
+
+.tarjeta6 > .encabezado > .perfil > img{
+    width: 50px;
+    height: 50px;
+    border-radius:150px;
+}
+
+.tarjeta6 > .botones{
+  margin-left: 10px;
+  margin-bottom: 10px;
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.tarjeta6 > .botones > .boton1{
+  background-color: $color-secundario-light;
+}
+
+.tarjeta6 > .botones > .boton1:hover{
+  background-color: $color-secundario-dark;
+}
+
+.tarjeta6 > .botones > .boton2{
+  background-color: $color-secundario-light;
+}
+
+.tarjeta6 > .botones > .boton2:hover{
+  background-color: $color-secundario-dark;
+}
+
+.tarjeta6 > .botones > .boton3{
+  background-color: $color-secundario-light;
+}
+
+.tarjeta6 > .botones > .boton3:hover{
+  background-color: $color-secundario-dark;
+}
+
+.tarjeta6 > .botones > .boton1 > a{
+  color:black;
+}
+.tarjeta6 > .botones > .boton1 > a:link {
+  text-decoration: none;
+}
+.tarjeta6 > .botones > .boton1 > a:visited {
+  text-decoration: none;
+}
+
+.tarjeta6 > .descripcion{
+  margin-left: 10px;
+  margin-bottom: 10px;
+  display: flex;
+  justify-content: center;
+}
