@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Página principal</title>
+
+  <!-- CSS  -->
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link href="css/materialize.css" type="text/css" rel="stylesheet" media="screen,projection" />
+  <link href="css/style.css" type="text/css" rel="stylesheet" media="screen,projection" />
+  <link href="style1_2.css" type="text/css" rel="stylesheet" media="screen,projection" />
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+</head>
+
+<body>
+  <nav class="white" role="navigation">
+    <div class="nav-wrapper container">
+      <a id="logo-container" href="#" class="brand-logo"><img src="images/marca.jpg"></a>
+      
+      <ul class="right hide-on-med-and-down">
+        <li><a href="personajes.html">Personajes</a></li>
+        <li><a href="volumenes.html">Volúmenes</a></li>
+        <li><a href="sitios.html">Curiosidades</a></li>
+        <li><a class="modal-trigger" href="#modal1">Contacto</a></li>
+        <li><button class="icon-button">
+          <a class="waves-effect waves-light btn modal-trigger" href="#modal2"> <i  id ="login-btn" class="material-icons">person</i></a>
+         
+        </button></li>
+            </ul>
+      
+      <ul id="nav-mobile" class="sidenav">
+        <li><a href="#">Menú</a></li><br>
+        <li><a href="personajes.html">Personajes</a></li><br>
+        <li><a href="volumenes.html">Volúmenes</a></li><br>
+        <li><a href="sitios.html">Curiosidades</a></li><br>
+        <li><a class="modal-trigger" href="#modal1">Contacto</a></li><br>
+        <li><a class="modal-trigger" href="#modal2" >Iniciar sesión</a></li>
+      </ul>
+      <a href="#" data-target="nav-mobile" class="sidenav-trigger"><i class="material-icons">menu</i></a>
+    </div>
+  </nav>
+
+      <!-- Modal Structure -->
+      <div id="modal1" class="modal">
+        <div class="modal-content">
+          <h4>Formulario de Contacto</h4>
+          <form id="login-form">
+            <label for="username">Nombre:</label>
+            <input type="text" id="username" name="username" placeholder="Introduzca nombre de usuario">
+    
+            <label for="email">Email:</label>
+            <input type="email" id="username" name="email" placeholder="Introduzca correo electrónico">
+      
+            <label for="telefono">Teléfono:</label>
+            <input type="text" id="telefono" name="telefono" placeholder="Introduzca número de teléfono">
+    
+            <label for="asunto">Asunto:</label>
+            <input type="text" id="asunto" name="asunto" placeholder="Introduzca asunto">
+            
+            <label for="mensaje">Mensaje:</label>
+            <textarea name="mensaje" class="mensaje" id="mensaje" placeholder="introduzca comentario"></textarea>
+      
+    
+            <button type="submit">Enviar</button>
+            
+          </form>
+        </div>
+      </div>
+    
+      <div id="modal2" class="modal">
+        <div class="modal-content">
+          <h4>Iniciar Sesión</h4>
+          <form id="login-form">
+            <label for="username">Nombre de usuario:</label>
+            <input type="text" id="username" name="username" placeholder="Introduzca nombre de usuario">
+            <label for="password">Contraseña:</label>
+            <input type="password" id="password" name="password" placeholder="Introduzca la contraseña">
+            <button type="submit">Enviar</button>
+          </form>
+        </div>
+      </div>
+
+  <div id="index-banner" class="parallax-container">
+    <div class="section no-pad-bot">
+      <div class="container">
+        <br><br>
+        <h1 class="header center teal-text text-lighten-2"style="text-shadow:5px 5px 5px white"></h1>
+
+      </div>
+    </div>
+    <div class="parallax"><img src="images/portada.jpg" alt="Unsplashed background img 1" width="1405px" height="467px"></div>
+  </div>
+
+
+  <main>
+    <div >
+    <div class="tarjeta">
+			<img src="images/img2.jpg" alt="Imagen 1">
+			<button><a href="personajes.html">Personajes. Ver más</a></button>
+		</div>
+  </div>
+		<div class="tarjeta">
+			<img src="images/volumenes3.png" alt="Imagen 2">
+			<button><a href="volumenes.html">Volúmenes. Ver más</a></button>
+		</div>
+		<div class="tarjeta">
+			<img src="images/falconia2.png" alt="Imagen 3">
+			<button><a href="sitios.html">Curiosidades. Ver más</a></button>
+		</div>
+	</main>
+
+  <footer>
+    <div class="contenido-footer">
+      <p>Designed by Rodrigo Mena</p>
+      <ul>
+        <li><a href="#">Política de privacidad</a></li>
+        <li><a href="#">Términos y condiciones</a></li>
+        <li><a href="#">Acerca de nosotros</a></li>
+        <li><i class="material-icons">share</i></li>
+      </ul>
+    </div>
+  </footer>
+
+
+   <!--  Scripts-->
+   <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+   <script src="js/materialize.js"></script>
+   <script src="js/init.js"></script>
+   <script src="modal.js"></script>
+</body>
+</html>

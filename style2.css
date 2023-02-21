@@ -1,0 +1,59 @@
+a {
+	text-decoration: none;
+}
+
+.brand-logo > img{
+    
+        margin-top: 6px;
+        max-width: 50px;
+        height: auto;
+      
+  }
+
+  /* Centrar el componente */
+  .cuerpo {
+    display: flex;
+    justify-content: center;
+  }
+  /* Reducir el ancho del componente */
+  /* .collapsible {
+    width: 800px;
+  } */
+
+  li{
+    color: black;
+  }
+
+  /* Centrar el componente */
+  .cuerpo {
+    display: flex;
+    justify-content: center;
+  }
+  /* Estilos para pantallas grandes */
+  .collapsible-lg {
+    width: 500px;
+  }
+  /* Estilos para pantallas medianas */
+  @media only screen and (max-width: 992px) {
+    .collapsible-md {
+      width: 80%;
+    }
+  }
+  /* Estilos para pantallas pequeñas */
+  @media only screen and (max-width: 768px) {
+    .collapsible-sm {
+      width: 100%;
+    }
+  }
+
+   /* Establecer un ancho fijo para pantallas grandes */
+   .collapse-lg {
+    width: 800px;
+  }
+
+  /* Establecer un ancho reducido para pantallas pequeñas */
+  @media only screen and (max-width: 600px) {
+    .collapse-lg {
+      width: 100%;
+    }
+  }

@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Página personajes</title>
+
+  <!-- CSS  -->
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link href="css/materialize.css" type="text/css" rel="stylesheet" media="screen,projection" />
+  <link href="css/style.css" type="text/css" rel="stylesheet" media="screen,projection" />
+  <link href="style2.css" type="text/css" rel="stylesheet" media="screen,projection" />
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+</head>
+<body>
+    <nav class="white" role="navigation">
+        <div class="nav-wrapper container">
+          <a id="logo-container" href="index.html" class="brand-logo"><img src="images/marca.jpg"></a>
+          
+          <ul class="right hide-on-med-and-down">
+            <li><a href="personajes.html">Personajes</a></li>
+            <li><a href="volumenes.html">Volúmenes</a></li>
+            <li><a href="sitios.html">Curiosidades</a></li>
+            <li><a class="modal-trigger" href="#modal1">Contacto</a></li>
+            <li><button class="icon-button">
+              <a class="waves-effect waves-light btn modal-trigger" href="#modal2"> <i  id ="login-btn" class="material-icons">person</i></a>
+             
+            </button></li>
+                </ul>
+          
+                <ul id="nav-mobile" class="sidenav">
+                  <li><a href="index.html">Menú</a></li><br>
+                  <li><a href="personajes.html">Personajes</a></li><br>
+                  <li><a href="volumenes.html">Volúmenes</a></li><br>
+                  <li><a href="sitios.html">Curiosidades</a></li><br>
+                  <li><a class="modal-trigger" href="#modal1">Contacto</a></li><br>
+                  <li><a class="modal-trigger" href="#modal2" >Iniciar sesión</a></li>
+                </ul>
+          <a href="#" data-target="nav-mobile" class="sidenav-trigger"><i class="material-icons">menu</i></a>
+        </div>
+      </nav>
+
+      <!-- Modal Structure -->
+      <div id="modal1" class="modal">
+        <div class="modal-content">
+          <h4>Formulario de Contacto</h4>
+          <form id="login-form">
+            <label for="username">Nombre:</label>
+            <input type="text" id="username" name="username" placeholder="Introduzca nombre de usuario">
+    
+            <label for="email">Email:</label>
+            <input type="email" id="username" name="email" placeholder="Introduzca correo electrónico">
+      
+            <label for="telefono">Teléfono:</label>
+            <input type="text" id="telefono" name="telefono" placeholder="Introduzca número de teléfono">
+    
+            <label for="asunto">Asunto:</label>
+            <input type="text" id="asunto" name="asunto" placeholder="Introduzca asunto">
+            
+            <label for="mensaje">Mensaje:</label>
+            <textarea name="mensaje" class="mensaje" id="mensaje" placeholder="introduzca comentario"></textarea>
+      
+    
+            <button type="submit">Enviar</button>
+            
+          </form>
+        </div>
+      </div>
+    
+      <div id="modal2" class="modal">
+        <div class="modal-content">
+          <h4>Iniciar Sesión</h4>
+          <form id="login-form">
+            <label for="username">Nombre de usuario:</label>
+            <input type="text" id="username" name="username" placeholder="Introduzca nombre de usuario">
+            <label for="password">Contraseña:</label>
+            <input type="password" id="password" name="password" placeholder="Introduzca la contraseña">
+            <button type="submit">Enviar</button>
+          </form>
+        </div>
+      </div>
+  
+      <div class="titulo">
+        <h1>PERSONAJES</h1>
+    </div>
+      
+
+      <div class="card-container">
+        <div class="card">
+          <img src="images/guts.png" alt="Descripción de la imagen">
+          <div class="card-body">
+            <h3>GUTS</h3>
+            <p>Guts, conocido por su epíteto del "espadachín negro", es el protagonista del manga y anime Berserk. Es un antiguo mercenario marcado que viaja por el mundo en una lucha interna constante entre perseguir su venganza y proteger a sus seres queridos.</p>
+            <button><a href="https://berserk.fandom.com/es/wiki/Guts" target="_blank">Más info.</a></button>
+          </div>
+        </div>
+
+        <div class="card">
+          <img src="images/griffith.jpg" alt="Descripción de la imagen">
+          <div class="card-body">
+            <h3>GRIFFITH</h3>
+            <p>Griffith es uno de los personajes principales y el principal antagonista del manga Berserk. Es un personaje de apariencia pulcra y andrógina que antiguamente era el líder de la Banda del Halcón, la banda de mercenarios a la que pertenecía Guts.</p>
+            <button><a href="https://berserk.fandom.com/es/wiki/Griffith" target="_blank">Más info.</a></button>
+          </div>
+        </div>
+
+        <div class="card">
+          <img src="images/casca.png" alt="Descripción de la imagen">
+          <div class="card-body">
+            <h3>CASCA</h3>
+            <p>Casca es un personaje principal de Berserk. Fue el único miembro femenino en la Banda del Halcón. Juega un papel primordial en la búsqueda de Guts por matar a todos los apóstoles y los Mano de Dios.</p>
+            <button><a href="https://berserk.fandom.com/es/wiki/Casca" target="_blank">Más info.</a></button>
+          </div>
+        </div>
+
+        <div class="card">
+          <img src="images/serpico.jpg" alt="Descripción de la imagen">
+          <div class="card-body">
+            <h3>SERPICO</h3>
+            <p>Serpico es actualmente uno de los personajes principales de Berserk. Anteriormente fue sirviente e hijo ilegítimo de la noble familia Vandimion, pasando a formar parte de los Caballeros de la Santa Cadena de Hierro y, más tarde, de la compañía viajera de Guts junto con su hermanastra Farnese de Vandimion.</p>
+            <button><a href="https://berserk.fandom.com/es/wiki/Serpico" target="_blank">Más info.</a></button>
+          </div>
+        </div>
+
+        <div class="card">
+            <img src="images/farnese.jpg" alt="Descripción de la imagen">
+            <div class="card-body">
+              <h3>FARNESE</h3>
+              <p>Farnese de Vandimion es uno de los personajes principales, miembro de la noble Familia Vandimion. Anteriormente, lideró la guardia ceremonial de la Santa Sede, los Caballeros de la Santa Cadena de Hierro.</p>
+              <button><a href="https://berserk.fandom.com/es/wiki/Farnese_de_Vandimion" target="_blank">Más info.</a></button>
+            </div>
+          </div>
+
+          <div class="card">
+            <img src="images/skull.jpeg" alt="Descripción de la imagen">
+            <div class="card-body">
+              <h3>SKULL KNIGHT</h3>
+              <p>El Caballero de la Calavera es una figura enigmática que lucha contra el mal. Posee una cosmovisión determinista, a menudo citando la inevitabilidad del flujo de la causalidad. Ha salvado a Guts varias veces a lo largo de su vida.</p>
+              <button><a href="https://berserk.fandom.com/es/wiki/Caballero_de_la_Calavera" target="_blank">Más info.</a></button>
+            </div>
+          </div>
+    </div>
+    
+</div>
+
+      
+     <footer>
+        <div class="contenido-footer">
+          <p>Designed by Rodrigo Mena</p>
+          <ul>
+            <li><a href="#">Política de privacidad</a></li>
+            <li><a href="#">Términos y condiciones</a></li>
+            <li><a href="#">Acerca de nosotros</a></li>
+            <li><i class="material-icons">share</i></li>
+          </ul>
+        </div>
+      </footer>
+    
+    
+       <!--  Scripts-->
+       <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+       <script src="js/materialize.js"></script>
+       <script src="js/init.js"></script>
+       <script src="modal.js"></script>
+</body>
+</html>

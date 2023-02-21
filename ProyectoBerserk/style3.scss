@@ -1,0 +1,324 @@
+@import url('https://fonts.googleapis.com/css2?family=Amiri&family=Metal+Mania&display=swap');
+
+$color-primario: #212121;
+$color-primario-light: #484848;
+$color-primario-dark: #000000;
+
+$color-secundario: #bcbcbc;
+$color-secundario-light: #eeeeee;
+$color-secundario-dark: #8c8c8c;
+
+$text-color-white: #ffffff;
+$text-color-black: #000000;
+
+$font-titulos-h1: 'Metal Mania', cursive;
+$font-contenido: 'Amiri', serif;
+$font-contenido-titulos: 'Amiri', serif;
+$size-font-h1: 64px;
+$size-font-contenido: 15px;
+$size-contenido-titulos: 20px;
+
+
+body {
+	font-family: $font-contenido;
+	margin: 0;
+	padding: 0;
+}
+
+.modal-trigger{
+  color: $text-color-white;
+}
+
+.right{
+  font-family: $font-contenido;
+  font-size: $size-font-contenido;
+}
+/* Estilos del header */
+
+header {
+	background-color: $color-primario;
+	color: $text-color-white;
+	padding: 20px;
+}
+
+header h1 {
+	margin: 0;
+}
+
+nav ul {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+
+nav li {
+	display: inline-block;
+	margin-right: 20px;
+}
+
+nav a {
+	color: $text-color-white;
+	text-decoration: none;
+}
+
+/* Estilos de las tarjetas */
+main {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-around;
+	padding: 20px;
+}
+
+h1{
+  font-family: $font-titulos-h1;
+  font-size: $size-font-h1;
+}
+
+.tarjeta {
+	background-color: $color-secundario;
+	margin: 20px;
+	padding: 20px;
+	box-shadow: 2px 2px 5px rgba(0,0,0,0.2);
+	width: 685px;
+	height: 357px;
+}
+
+.tarjeta img {
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+}
+
+.tarjeta button {
+	display: block;
+	margin: 0 auto;
+	padding: 10px 20px;
+	font-size: 18px;
+	background-color: $color-primario;
+	color: $text-color-white;
+	border: none;
+	border-radius: 4px;
+}
+
+/* Estilos responsivos */
+@media (max-width: 767px) {
+	.tarjeta {
+		width: 100%;
+		height: auto;
+	}
+	
+	.tarjeta button {
+		font-size: 14px;
+		padding: 8px 16px;
+	}
+}
+
+footer {
+    background-color: $color-primario;
+    color: $text-color-white;
+    padding: 20px;
+    text-align: center;
+    font-size: $size-font-contenido;
+    font-family: $font-contenido;
+  }
+  
+  .contenido-footer {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .contenido-footer p {
+    flex: 1;
+    margin: 0;
+  }
+  
+  .contenido-footer ul {
+    flex: 1;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+  }
+  
+  .contenido-footer li {
+    margin: 0 10px;
+  }
+  
+  .contenido-footer a {
+    color: $text-color-white;
+    text-decoration: none;
+  }
+  
+  @media (max-width: 767px) {
+    footer {
+      font-size: 12px;
+    }
+    
+    .contenido-footer {
+      flex-direction: column;
+    }
+    
+    .contenido-footer p {
+      margin-bottom: 10px;
+    }
+    
+    .contenido-footer ul {
+      margin-top: 10px;
+    }
+    
+    .contenido-footer li {
+      margin: 0;
+    }
+  }
+
+  a:visited {
+    color: $text-color-white; /* Cambiar por el color deseado */
+  }
+
+  a{
+    color: $text-color-white;
+  }
+
+  .brand-logo{
+    img {
+        margin-top: 6px;
+        max-width: 50px;
+        height: auto;
+      }
+  }
+
+  .icon-button {
+    border: none;
+    background-color: transparent;
+    padding: 0;
+    cursor: pointer;
+    width: auto;
+    height: auto;
+  }
+  .icon-button i {
+    font-size: 10px;
+    color: $text-color-white; /* color del icono */
+  }
+
+  .titulo{
+    display: flex;
+    justify-content: center;
+  }
+
+/* Estilos para pantallas más grandes */
+@media only screen and (min-width: 768px) {
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      background-color: $color-secundario;
+    }
+  
+    td {
+      border: 3px solid $text-color-black;
+      padding: 10px;
+    }
+  
+    .title {
+      font-size: 1.2rem;
+      font-weight: bold;
+    }
+  
+    .date {
+      font-size: 0.8rem;
+      color: $text-color-black;
+    }
+  
+    .description {
+      vertical-align: top;
+      font-size: 0.9rem;
+    }
+  
+    .action {
+      text-align: right;
+    }
+  }
+  
+  /* Estilos para pantallas más pequeñas */
+  @media only screen and (max-width: 767px) {
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      background-color: $color-secundario;
+    }
+  
+    td {
+      display: block;
+      border: none;
+      border: 2px solid $text-color-black;
+    }
+  
+    .title,
+    .date,
+    .description,
+    .action {
+      display: block;
+      padding: 10px;
+    }
+  
+    .description {
+      border-top: 1px solid #ccc;
+    }
+  }
+
+  /* Estilos para pantallas más grandes */
+@media only screen and (min-width: 768px) {
+    .table-image {
+      width: 300px;
+      height: 450px;
+    }
+  }
+  
+  /* Estilos para pantallas más pequeñas */
+  @media only screen and (max-width: 767px) {
+    .table-image {
+      width: 100%;
+      height: auto;
+    }
+  }
+
+  @media only screen and (min-width: 768px) {
+    .imagen {
+      width: 300px;
+      height: 450px;
+    }
+  }
+  
+  /* Estilos para pantallas más pequeñas */
+  @media only screen and (max-width: 767px) {
+    .imagen {
+      width: 100%;
+      height: auto;
+    }
+  }
+
+  .card{
+    margin-left: 20px;
+    margin-right: 20px;
+    font-family: $font-contenido;
+    font-size: $size-font-contenido;
+
+    .title{
+      font-family: $font-contenido-titulos;
+      font-size: $size-contenido-titulos;
+    }
+  }
+
+  .description > ul {
+    list-style-type: disc; /* Tipo de viñeta */
+    list-style-position: inside; /* Posición de la viñeta */
+    margin-left: 0; /* Quita el margen izquierdo */
+    padding-left: 0; /* Quita el padding izquierdo */
+  }
+  
+  .description > ul > li {
+    margin: 0 0 5px 0; /* Agrega un margen inferior a cada elemento */
+    padding: 0 0 0 1.5em; /* Agrega padding izquierdo para separar la viñeta del texto */
+  }

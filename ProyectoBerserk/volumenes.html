@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Página personajes</title>
+
+  <!-- CSS  -->
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link href="css/materialize.css" type="text/css" rel="stylesheet" media="screen,projection" />
+  <link href="css/style.css" type="text/css" rel="stylesheet" media="screen,projection" />
+  <link href="style3.css" type="text/css" rel="stylesheet" media="screen,projection" />
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+</head>
+<body>
+
+    <nav class="white" role="navigation">
+        <div class="nav-wrapper container">
+          <a id="logo-container" href="index.html" class="brand-logo"><img src="images/marca.jpg"></a>
+          
+          <ul class="right hide-on-med-and-down">
+            <li><a href="personajes.html">Personajes</a></li>
+            <li><a href="volumenes.html">Volúmenes</a></li>
+            <li><a href="sitios.html">Curiosidades</a></li>
+            <li><a class="modal-trigger" href="#modal1">Contacto</a></li>
+            <li><button class="icon-button">
+              <a class="waves-effect waves-light btn modal-trigger" href="#modal2"> <i  id ="login-btn" class="material-icons">person</i></a>
+             
+            </button></li>
+                </ul>
+          
+          <ul id="nav-mobile" class="sidenav">
+            <li><a href="index.html">Menú</a></li><br>
+            <li><a href="personajes.html">Personajes</a></li><br>
+            <li><a href="volumenes.html">Volúmenes</a></li><br>
+            <li><a href="sitios.html">Sitios</a></li><br>
+            <li><a class="modal-trigger" href="#modal1">Contacto</a></li><br>
+            <li><a class="modal-trigger" href="#modal2" >Iniciar sesión</a></li>
+          </ul>
+          <a href="#" data-target="nav-mobile" class="sidenav-trigger"><i class="material-icons">menu</i></a>
+        </div>
+      </nav>
+
+      <!-- Modal Structure -->
+  <div id="modal1" class="modal">
+    <div class="modal-content">
+      <h4>Formulario de Contacto</h4>
+      <form id="login-form">
+        <label for="username">Nombre:</label>
+        <input type="text" id="username" name="username" placeholder="Introduzca nombre de usuario">
+
+        <label for="email">Email:</label>
+        <input type="email" id="username" name="email" placeholder="Introduzca correo electrónico">
+  
+        <label for="telefono">Teléfono:</label>
+        <input type="text" id="telefono" name="telefono" placeholder="Introduzca número de teléfono">
+
+        <label for="asunto">Asunto:</label>
+        <input type="text" id="asunto" name="asunto" placeholder="Introduzca asunto">
+        
+        <label for="mensaje">Mensaje:</label>
+        <textarea name="mensaje" class="mensaje" id="mensaje" placeholder="introduzca comentario"></textarea>
+  
+
+        <button type="submit">Enviar</button>
+        
+      </form>
+    </div>
+  </div>
+
+  <div id="modal2" class="modal">
+    <div class="modal-content">
+      <h4>Iniciar Sesión</h4>
+      <form id="login-form">
+        <label for="username">Nombre de usuario:</label>
+        <input type="text" id="username" name="username" placeholder="Introduzca nombre de usuario">
+        <label for="password">Contraseña:</label>
+        <input type="password" id="password" name="password" placeholder="Introduzca la contraseña">
+        <button type="submit">Enviar</button>
+      </form>
+    </div>
+  </div>
+
+  
+      <div class="titulo">
+        <h1>VOLÚMENES</h1>
+    </div>
+
+    <div class="card">
+        <table>
+          <tr>
+            <td class="imagen" rowspan="2"><img class="table-image" src="images/Volume_1.jpg" alt="Imagen de la tarjeta"></td>
+            <td class="title">Volumen 1</td>
+            <td class="date">Publicado el 1 de Diciembre de 1990</td>
+          </tr>
+          <tr>
+            <td colspan="2" rowspan="2" class="description">Contiene los capítulos:
+                <ul>
+                    <li>"El guerrero negro"</li>
+                    <li>"El estigma"</li>
+                    <li>"Guardianes de la codicia (1)"</li>
+                </ul>
+            </td>
+          </tr>
+        </table>
+      </div>
+
+      <div class="card">
+        <table>
+          <tr>
+            <td class="imagen" rowspan="2"><img class="table-image" src="images/Volumen_12.jpg" alt="Imagen de la tarjeta"></td>
+            <td class="title">Volumen 12</td>
+            <td class="date">Publicado el 27 de Septiembre de 1996</td>
+          </tr>
+          <tr>
+            <td colspan="2" rowspan="2" class="description">Contiene los capítulos:
+                <ul>
+                    <li>"Réquiem del viento"</li>
+                    <li>"Los Guerreros del Crepúsculo"</li>
+                    <li>"Chico del callejón trasero"</li>
+                    <li>"Eclipse"</li>
+                    <li>"El tiempo prometido"</li>
+                    <li>"Adviento"</li>
+                    <li>"El anfitrión inhumano"</li>
+                    <li>"El castillo"</li>
+                    <li>"Despedida"</li>
+                    <li>"La fiesta"</li>
+                </ul>
+            </td>
+          </tr>
+        </table>
+      </div>
+
+      <div class="card">
+        <table>
+          <tr>
+            <td class="imagen" rowspan="2"><img class="table-image" src="images/Volumen_17.jpg" alt="Imagen de la tarjeta"></td>
+            <td class="title">Volumen 17</td>
+            <td class="date">Publicado el 29 de Marzo de 1999</td>
+          </tr>
+          <tr>
+            <td colspan="2" rowspan="2" class="description">Contiene los capítulos:
+                <ul>
+                    <li>"Los invisibles"</li>
+                    <li>"Noche de los milagros"</li>
+                    <li>"Pasado y futuro"</li>
+                    <li>"Mañana de la verdad"</li>
+                    <li>"Revelaciones (1)"</li>
+                    <li>"Revelaciones (2)"</li>
+                    <li>"Revelaciones (3)"</li>
+                    <li>"Grietas en la hoja"</li>
+                    <li>"Una llama débil"</li>
+                    <li>"A Tierra Santa (1)"</li>
+                    <li>"A Tierra Santa (2)"</li>
+                </ul>
+            </td>
+          </tr>
+        </table>
+      </div>
+
+
+      <div class="card">
+        <table>
+          <tr>
+            <td class="imagen" rowspan="2"><img class="table-image" src="images/Volumen_29.jpg" alt="Imagen de la tarjeta"></td>
+            <td class="title">Volumen 29</td>
+            <td class="date">Publicado el 29 de Septiembre de 2005</td>
+          </tr>
+          <tr>
+            <td colspan="2" rowspan="2" class="description">Contiene los capítulos:
+                <ul>
+                    <li>"Derramamiento de sangre"</li>
+                    <li>"Guerreo"</li>
+                    <li>"Una cena escasa"</li>
+                    <li>"Homing"</li>
+                    <li>"Vandimion"</li>
+                    <li>"En el jardín"</li>
+                    <li>"El lirio blanco del campo"</li>
+                    <li>"Madre"</li>
+                    <li>"La pelota"</li>
+                    <li>"La cámara de la columnata"</li>
+                </ul>
+            </td>
+          </tr>
+        </table>
+      </div>
+
+      <div class="card">
+        <table>
+          <tr>
+            <td class="imagen" rowspan="2"><img class="table-image" src="images/Volumen_37.jpg" alt="Imagen de la tarjeta"></td>
+            <td class="title">Volumen 37</td>
+            <td class="date">Publicado el 29 de Marzo de 2013</td>
+          </tr>
+          <tr>
+            <td colspan="2" rowspan="2" class="description">Contiene los capítulos:
+                <ul>
+                    <li>"Sirena (2)"</li>
+                    <li>"Siren"</li>
+                    <li>"Saliendo a la superficie"</li>
+                    <li>"Estrella fugaz"</li>
+                    <li>"Flores primavelares de días lejanos (1)"</li>
+                    <li>"Flores primavelares de días lejanos (2)"</li>
+                    <li>"Flores primavelares de días lejanos (3)"</li>
+                    <li>"Vagón cubierto"</li>
+                    <li>"Paraiso"</li>
+                </ul>
+            </td>
+          </tr>
+        </table>
+      </div>
+
+      <footer>
+        <div class="contenido-footer">
+          <p>Designed by Rodrigo Mena</p>
+          <ul>
+            <li><a href="#">Política de privacidad</a></li>
+            <li><a href="#">Términos y condiciones</a></li>
+            <li><a href="#">Acerca de nosotros</a></li>
+            <li><i class="material-icons">share</i></li>
+          </ul>
+        </div>
+      </footer>
+    
+    
+       <!--  Scripts-->
+       <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+       <script src="js/materialize.js"></script>
+       <script src="js/init.js"></script>
+       <script src="modal.js"></script>
+</body>
+</html>

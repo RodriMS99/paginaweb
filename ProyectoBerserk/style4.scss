@@ -1,0 +1,286 @@
+@import url('https://fonts.googleapis.com/css2?family=Amiri&family=Metal+Mania&display=swap');
+
+$color-primario: #212121;
+$color-primario-light: #484848;
+$color-primario-dark: #000000;
+
+$color-secundario: #bcbcbc;
+$color-secundario-light: #eeeeee;
+$color-secundario-dark: #8c8c8c;
+
+$text-color-white: #ffffff;
+$text-color-black: #000000;
+
+$font-titulos-h1: 'Metal Mania', cursive;
+$font-contenido: 'Amiri', serif;
+$font-contenido-titulos: 'Amiri', serif;
+$size-font-h1: 64px;
+$size-font-contenido: 15px;
+$size-contenido-titulos: 20px;
+
+
+body {
+	font-family: $font-contenido;
+	margin: 0;
+	padding: 0;
+}
+
+.right{
+  font-family: $font-contenido;
+  font-size: $size-font-contenido;
+}
+
+/* Estilos del header */
+
+header {
+	background-color: $color-primario;
+	color: $text-color-white;
+	padding: 20px;
+}
+
+header h1 {
+	margin: 0;
+}
+
+nav ul {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+
+nav li {
+	display: inline-block;
+	margin-right: 20px;
+}
+
+nav a {
+	color: $text-color-white;
+	text-decoration: none;
+}
+
+/* Estilos de las tarjetas */
+main {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-around;
+	padding: 20px;
+}
+
+h1{
+  font-family: $font-titulos-h1;
+  font-size: $size-font-h1;
+}
+
+footer {
+    background-color: $color-primario;
+    color: $text-color-white;
+    padding: 20px;
+    text-align: center;
+    font-family: $font-contenido;
+    font-size: $size-font-contenido;
+  }
+  
+  .contenido-footer {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .contenido-footer p {
+    flex: 1;
+    margin: 0;
+  }
+  
+  .contenido-footer ul {
+    flex: 1;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+  }
+  
+  .contenido-footer li {
+    margin: 0 10px;
+  }
+  
+  .contenido-footer a {
+    color: $text-color-white;
+    text-decoration: none;
+  }
+  
+  @media (max-width: 767px) {
+    footer {
+      font-size: 12px;
+    }
+    
+    .contenido-footer {
+      flex-direction: column;
+    }
+    
+    .contenido-footer p {
+      margin-bottom: 10px;
+    }
+    
+    .contenido-footer ul {
+      margin-top: 10px;
+    }
+    
+    .contenido-footer li {
+      margin: 0;
+    }
+  }
+
+  a:visited {
+    color: $text-color-white; /* Cambiar por el color deseado */
+  }
+
+  a{
+    color: $text-color-white;
+  }
+
+  .brand-logo{
+    img {
+        margin-top: 6px;
+        max-width: 50px;
+        height: auto;
+      }
+  }
+
+  .modal-trigger{
+    color: $text-color-white;
+  }
+ 
+  .icon-button {
+    border: none;
+    background-color: transparent;
+    padding: 0;
+    cursor: pointer;
+    width: auto;
+    height: auto;
+  }
+  .icon-button i {
+    font-size: 10px;
+    color: $text-color-white; /* color del icono */
+  }
+
+  
+
+  .titulo{
+    display: flex;
+    justify-content: center;
+  }
+
+  .flex-container{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+}
+
+.botones{
+    display:flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin-top: 10px;
+    margin-bottom: 25px;
+}
+
+.play > button{
+    color: $color-secundario-light;
+    border-radius: 50%;
+    margin-left: 10px;
+    margin-right: 10px;
+    background-color: rgb(0, 0, 0);
+    height: 40px;
+    width: 40px;
+}
+
+.pause > button{
+    color: $color-secundario-light;
+    border-radius: 50%;
+    margin-left: 10px;
+    margin-right: 10px;
+    background-color: rgb(0, 0, 0);
+    height: 40px;
+    width: 40px;
+}
+
+.stop > button{
+    color: $color-secundario-light;
+    border-radius: 50%;
+    margin-left: 10px;
+    margin-right: 10px;
+    background-color: rgb(0, 0, 0);
+    height: 40px;
+    width: 40px;
+}
+
+.rewind > button{
+    color: $color-secundario-light;
+    border-radius: 50%;
+    margin-left: 10px;
+    margin-right: 10px;
+    background-color: rgb(0, 0, 0);
+    height: 40px;
+    width: 40px;
+}
+
+/* Media query para ajustar el tamaño de los botones en pantallas más pequeñas */
+@media only screen and (max-width: 600px) {
+    .botones {
+      position: relative;
+      margin: 0 auto;
+      width: 80%;
+      margin-bottom: 25px;
+    }
+    .pause button {
+      width: 100%;
+    }
+    .stop button {
+        width: 100%;
+    }
+    .rewind button {
+        width: 100%;
+    }
+    .play button {
+        width: 100%;
+    }
+  }
+
+/* Contenedor del video */
+.video-container {
+    display: flex;
+    justify-content: center;
+    position: relative;
+    width: 100%;
+    padding-bottom: 41.67%; /* Proporción de aspecto 1200:500 */
+    margin-bottom: 25px;
+  }
+  
+  /* Video */
+  #myVideo {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+  }
+  
+  /* Media queries para ajustar el tamaño del video en pantallas más pequeñas */
+  @media only screen and (max-width: 767px) {
+    .video-container {
+      padding-bottom: 75%; /* Proporción de aspecto 4:3 */
+    }
+  }
+  
+  .flex-container{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+}
+  
