@@ -1,3 +1,4 @@
+@charset "UTF-8";
 @import url("https://fonts.googleapis.com/css2?family=Amiri&family=Metal+Mania&display=swap");
 body {
   font-family: "Amiri", serif;
@@ -5,21 +6,20 @@ body {
   padding: 0;
 }
 
+.modal-trigger {
+  color: #ffffff;
+}
+
+.right {
+  font-family: "Amiri", serif;
+  font-size: 15px;
+}
+
 /* Estilos del header */
 header {
   background-color: #212121;
   color: #ffffff;
   padding: 20px;
-  font-family: "Amiri", serif;
-  font-size: 15px;
-}
-
-.modal-trigger {
-  color: #ffffff;
-}
-
-.modal-trigger_2 {
-  color: #000000;
 }
 
 header h1 {
@@ -43,12 +43,16 @@ nav a {
 }
 
 /* Estilos de las tarjetas */
-/* Estilos de las tarjetas */
 main {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-around;
   padding: 20px;
+}
+
+h1 {
+  font-family: "Metal Mania", cursive;
+  font-size: 64px;
 }
 
 .tarjeta {
@@ -78,7 +82,7 @@ main {
   border-radius: 4px;
 }
 
-/* Estilos responsivos */
+/* Estilos responsives */
 @media (max-width: 767px) {
   .tarjeta {
     width: 100%;
@@ -130,8 +134,7 @@ footer {
 
 @media (max-width: 767px) {
   footer {
-    font-size: 15px;
-    font-family: "Amiri", serif;
+    font-size: 12px;
   }
   .contenido-footer {
     flex-direction: column;
@@ -174,7 +177,107 @@ a {
   color: #ffffff; /* color del icono */
 }
 
-.contenedor-tarjetas {
+.titulo {
   display: flex;
-  flex-wrap: wrap;
-}/*# sourceMappingURL=style1_2.css.map */
+  justify-content: center;
+}
+
+/* Estilos para pantallas más grandes */
+@media only screen and (min-width: 768px) {
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    background-color: #bcbcbc;
+  }
+  td {
+    border: 3px solid #000000;
+    padding: 10px;
+  }
+  .title {
+    font-size: 1.2rem;
+    font-weight: bold;
+  }
+  .date {
+    font-size: 0.8rem;
+    color: #000000;
+  }
+  .description {
+    vertical-align: top;
+    font-size: 0.9rem;
+  }
+  .action {
+    text-align: right;
+  }
+}
+/* Estilos para pantallas más pequeñas */
+@media only screen and (max-width: 767px) {
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    background-color: #bcbcbc;
+  }
+  td {
+    display: block;
+    border: none;
+    border: 2px solid #000000;
+  }
+  .title,
+  .date,
+  .description,
+  .action {
+    display: block;
+    padding: 10px;
+  }
+  .description {
+    border-top: 1px solid #ccc;
+  }
+}
+/* Estilos para pantallas más grandes */
+@media only screen and (min-width: 768px) {
+  .table-image {
+    width: 300px;
+    height: 450px;
+  }
+}
+/* Estilos para pantallas más pequeñas */
+@media only screen and (max-width: 767px) {
+  .table-image {
+    width: 100%;
+    height: auto;
+  }
+}
+@media only screen and (min-width: 768px) {
+  .imagen {
+    width: 300px;
+    height: 450px;
+  }
+}
+/* Estilos para pantallas más pequeñas */
+@media only screen and (max-width: 767px) {
+  .imagen {
+    width: 100%;
+    height: auto;
+  }
+}
+.card {
+  margin-left: 20px;
+  margin-right: 20px;
+  font-family: "Amiri", serif;
+  font-size: 15px;
+}
+.card .title {
+  font-family: "Amiri", serif;
+  font-size: 20px;
+}
+
+.description > ul {
+  list-style-type: disc; /* Tipo de viñeta */
+  list-style-position: inside; /* Posición de la viñeta */
+  margin-left: 0; /* Quita el margen izquierdo */
+  padding-left: 0; /* Quita el padding izquierdo */
+}
+
+.description > ul > li {
+  margin: 0 0 5px 0; /* Agrega un margen inferior a cada elemento */
+  padding: 0 0 0 1.5em; /* Agrega padding izquierdo para separar la viñeta del texto */
+}/*# sourceMappingURL=style3.css.map */

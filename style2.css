@@ -57,3 +57,13 @@ a {
       width: 100%;
     }
   }
+
+  .collapsible-header{
+    background-color: #4a2b20;
+    color: #fff;
+  }
+
+  /* .collapsible-body{
+    background-color: #65894b;
+    color: #fff;
+  } */

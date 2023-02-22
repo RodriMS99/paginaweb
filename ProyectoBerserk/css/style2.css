@@ -224,13 +224,11 @@ button {
   margin: 0 auto;
   margin-bottom: 15px;
   background-color: #bcbcbc;
-  /* otros estilos... */
 }
 
 @media (min-width: 768px) {
   .card {
     max-width: 350px; /* volver al ancho máximo de 650px para pantallas más grandes */
-    /* otros estilos... */
   }
 }
 .titulo {

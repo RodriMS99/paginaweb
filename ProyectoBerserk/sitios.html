@@ -10,11 +10,11 @@
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
   <link href="css/materialize.css" type="text/css" rel="stylesheet" media="screen,projection" />
   <link href="css/style.css" type="text/css" rel="stylesheet" media="screen,projection" />
-  <link href="style4.css" type="text/css" rel="stylesheet" media="screen,projection" />
+  <link href="css/style4.css" type="text/css" rel="stylesheet" media="screen,projection" />
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 </head>
 <body>
-
+<!-- Header -->
     <nav class="white" role="navigation">
         <div class="nav-wrapper container">
           <a id="logo-container" href="index.html" class="brand-logo"><img src="images/marca.jpg"></a>
@@ -41,7 +41,7 @@
           <a href="#" data-target="nav-mobile" class="sidenav-trigger"><i class="material-icons">menu</i></a>
         </div>
       </nav>
-    <!-- Modal Structure -->
+    <!-- Estructura modal formulario de contacto -->
     <div id="modal1" class="modal">
       <div class="modal-content">
         <h4>Formulario de Contacto</h4>
@@ -67,7 +67,7 @@
         </form>
       </div>
     </div>
-  
+  <!-- Estructura modal login -->
     <div id="modal2" class="modal">
       <div class="modal-content">
         <h4>Iniciar Sesión</h4>
@@ -84,18 +84,19 @@
       <div class="titulo">
         <h1>CURIOSIDADES</h1>
       </div>
-
+<!-- Contenedor con el vídeo y los botones  -->
     <div class="flex-container">
 
    
         <div class="video-container">
             <video id="myVideo" controls>
-              <source src="153 Curiosidades_Datos Sobre Berserk.mp4" type="video/mp4">
+              <source src="images/153 Curiosidades_Datos Sobre Berserk.mp4" type="video/mp4">
               <track src="chrome-subtitles-en.vtt" label="English captions" kind="captions" srclang="en" default>
               <track kind="captions" label="Español" src="subtitulos_es.vtt">
               Tu navegador no soporta el elemento video.
             </video>
           </div>
+          <!-- Botones con sus respectivas funciones -->
         <div class = "botones">
             <div class = "play"><button onclick="playVideo();"><span class="material-icons">play_arrow</span></button></div>
             <div class = "pause"><button onclick="pausesVideo();"><span class="material-icons">pause</span></button></div>
@@ -103,7 +104,7 @@
             <div class = "rewind"><button onclick="rewindVideo();"><span class="material-icons">fast_rewind</span></button></div>
         </div>    
     </div>
-
+<!-- Footer -->
     <footer>
         <div class="contenido-footer">
           <p>Designed by Rodrigo Mena</p>
@@ -118,7 +119,7 @@
     
     
        <!--  Scripts-->
-
+      <!-- Este script controla el vídeo -->
        <script>
         thevideo = document.querySelector("#myVideo");
 
@@ -143,5 +144,5 @@
        <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
        <script src="js/materialize.js"></script>
        <script src="js/init.js"></script>
-       <script src="modal.js"></script>
+       <script src="js/modal.js"></script>
 </body>

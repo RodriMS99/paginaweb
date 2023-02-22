@@ -72,6 +72,7 @@ h1{
   font-size: $size-font-h1;
 }
 
+// Estilos del footer
 footer {
     background-color: $color-primario;
     color: $text-color-white;
@@ -111,6 +112,7 @@ footer {
     text-decoration: none;
   }
   
+  // Estilos responsive con media queries para el footer
   @media (max-width: 767px) {
     footer {
       font-size: 12px;
@@ -163,6 +165,7 @@ footer {
     color: $text-color-white; /* color del icono */
   }
 
+// Estilos que afectarán al diseño del cuerpo de nuestra página
 body {
     margin: 0;
     padding: 0;
@@ -171,6 +174,7 @@ body {
     line-height: 1.5;
     color: $color-primario;
   }
+  // Estilos sobre el contendor de tarjetas
   .card-container {
     display: flex;
     flex-wrap: wrap;
@@ -218,6 +222,7 @@ body {
     cursor: pointer;
   }
  
+  // Estilos responsives con media queries para que el contendor de tarjetas sea responsive
   @media only screen and (max-width: 768px) {
     .card-container {
       flex-direction: column;
@@ -232,6 +237,7 @@ body {
     height: auto;
   }
   
+  // Estilos responsive con media queries para las imágenes de las tarjetas
   @media (min-width: 768px) {
     .card img {
       width: 350px;
@@ -244,13 +250,13 @@ body {
     margin: 0 auto;
     margin-bottom: 15px;
     background-color: $color-secundario;
-    /* otros estilos... */
+   
   }
   
   @media (min-width: 768px) {
     .card {
       max-width: 350px; /* volver al ancho máximo de 650px para pantallas más grandes */
-      /* otros estilos... */
+      
     }
   }
 

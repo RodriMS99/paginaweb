@@ -2,39 +2,172 @@
 <html lang="es">
 
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>Tema 2</title>
-    <link rel="stylesheet" href="Colores.css">
-</head>
+  
+    <!-- CSS  -->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link href="css/materialize.css" type="text/css" rel="stylesheet" media="screen,projection" />
+    <link href="css/style.css" type="text/css" rel="stylesheet" media="screen,projection" />
+    <link href="style2.css" type="text/css" rel="stylesheet" media="screen,projection" />
+  
+  </head>
 
 <body>
-    <h1 style="text-align: center;">Tema 2. Uso de estilos</h1>
-    <h2>Documentaciones:</h2>
+  <nav class="white" role="navigation">
+    <div class="nav-wrapper container">
+      <a id="logo-container" href="index.html" class="brand-logo"><img src="logo.jpg"></a>
+      
+      <ul class="right hide-on-med-and-down">
+        <li><a href="Tema1.html">Tema1</a></li>
+        <li><a href="Tema2.html">Tema2</a></li>
+        <li><a href="Tema3.html">Tema3</a></li>
+        
+        
+       </ul>
+      
+      <ul id="nav-mobile" class="sidenav">
+        <li><a href="index.html">Menú</a></li>
+        <li><a href="Tema1.html">Planificación de interfaces gráficas</a></li>
+        <li><a href="Tema2.html">Uso de estilos</a></li>
+        <li><a href="Tema3.html">Contenido multimedia</a></li>
+      </ul>
+      <a href="#" data-target="nav-mobile" class="sidenav-trigger"><i class="material-icons">menu</i></a>
+    </div>
+  </nav>
+
+  <div class="container">
+    <div class="row center-align">
+      <div class="col s12 m8 offset-m2">
+        <h3 class="center-align">Tema 2. Uso de estilos</h3>
+        <p class="encabezado center-align">
+            <p>Uso de estilos: Las hojas de estilo nos permiten personalizar una web para que su contenido se adapte a las pantallas de los diferentes dispositivos de forma transparente para el usuario, que tendrá la sensación de estar navegando siempre por el mismo sitio independientemente de que acceda con su teléfono móvil, tablet o PC</p>
+        </div>
+    </div>
+  </div>
 
 
-    <h2>2.1 Bootstrap:</h2>
-    <h3>Herramientas de interés:</h3>
-    <a href="https://getbootstrap.com/" target="_blank">Página oficial de Bootstrap</a><br>
-    <h3>Prácticas:</h3>
-    <a href="album.html" target="_blank">Práctica ejemplo de álbum con Bootstrap</a><br>
-    <h2>2.2 Materialize:</h2>
-    <h3>Herramientas de interés:</h3>
-    <a href="https://materializecss.com/" target="_blank">Página oficial de Materialize</a><br>
-    <h2>2.3 Ejemplo Parallax:</h2>
-    <a href="C:\xampp\htdocs\parallax-template\index.html" target="_blank">Ejemplo clínica de estética</a><br>
-    <h2>2.4 Maquetación Flexbox:</h2>
-    <a href="./MaquetaciónFlexbox/fichero.html" target="_blank">Ejemplo Maquetación Flexbox</a><br>
-    <a href="DocFlexBoxMozilla.pdf" target="_blank">Documentación FlexBox Mozilla</a><br>
-    <a href="DocFlexBoxW3Schools.pdf" target="_blank">Documentación FlexBox W3Schools</a><br>
-    <h2>2.5 Material-Angular:</h2>
-    <a href="DocMaterialAngular.pdf" target="_blank">Documentación Material-Angular</a><br>
-    <br>
-    <br>
-    <a href="index.html">Volver a la página de inicio</a>
+<div class="cuerpo">
+  <div class="row">
+    <div class="col l12 s12 m12 xl12">
+    <ul class="collapsible collapse-lg">
+      <li>
+        <div class="collapsible-header"><i class="material-icons">format_bold</i>Bootstrap</div>
+        <div class="collapsible-body">
+          <header><h4>Documentaciones</h4></header>
+          <ul>
+            <li><a href="https://getbootstrap.com/docs/5.2/getting-started/introduction/" target="_blank">Documentación Bootstarp</a></li>
+            </ul>
+          <header><h4>Herramientas de interés</h4></header>
+          <ul>
+            <li><a href="https://getbootstrap.com/" target="_blank">Página oficial de Bootstrap</a> </li>
+          </ul>
+          <header><h4>Prácticas</h4></header>
+          <ul>
+            <li><a href="album.html" target="_blank">Ejemplo de álbum con Bootstarp</a></li>
+          </ul>
+        </div>
+      </li>
+      <li>
+        <div class="collapsible-header"><i class="material-icons">design_services</i>Materialize</div>
+        <div class="collapsible-body">
+          <header><h4>Documentaciones</h4></header>
+          <ul>
+            <li><a href="https://materializecss.com/getting-started.html" target="_blank">Documentación Materialize</a></li>
+          </ul>
+          <header><h4>Herramientas de interés</h4></header>
+          <ul>
+              <li><a href="https://materializecss.com/" target="_blank">Página oficial de Materialize</a></li>
+              
+          </ul>
+          <header><h4>Prácticas</h4></header>
+          <ul>
+            <li><a href="parallax-template/index.html" target="_blank">Ejemplo clínica de estética</a></li>
+          </ul>
+        </div>
+      </li>
+      <li>
+        <div class="collapsible-header"><i class="material-icons">view_module</i>Maquetación Flexbox</div>
+        <div class="collapsible-body">
+          <header><h4>Documentaciones</h4></header>
+          <ul>
+            <li><a href="DocFlexBoxMozilla.pdf" target="_blank">Documentación FlexBox Mozilla</a></li>
+            <li><a href="DocFlexBoxW3Schools.pdf" target="_blank">Documentación Flexbox W3School</a></li>
+            <li><a href="https://www.w3schools.com/css/css3_mediaqueries.asp" target="_blank">CSS Media Queries</a></li>
+          </ul>
+          <header><h4>Herramientas de interés</h4></header>
+          <ul>
+              <li><a href="https://flexboxfroggy.com/#es" target="_blank">Flexbox Froggy</a></li>
+              <li><a href="https://developer.mozilla.org/es/docs/Web/CSS/CSS_Flexible_Box_Layout/Basic_Concepts_of_Flexbox" target="_blank">MDN Flexbox</a></li>
+              <li><a href="https://www.w3schools.com/css/css3_flexbox.asp" target="_blank">W3Schools Flexbox</a></li>
+          
+            </ul>
+          <header><h4>Prácticas</h4></header>
+          <ul>
+            <li><a href="./MaquetaciónFlexbox/fichero.html" target="_blank">Ejemplo Maquetación Flexbox</a></li>
+          </ul>
+        </div>
+      </li>
+      <li>
+        <div class="collapsible-header"><i class="material-icons">brush</i>SASS</div>
+        <div class="collapsible-body">
+          <header><h4>Documentaciones</h4></header>
+          <ul>
+            <li><a href="https://www.w3schools.com/sass/" target="_blank">Documentación SASS W3Schools</a></li>
+            <li><a href="https://sass-lang.com/documentation/" target="_blank">Documentación SASS</a></li>
+            <li><a href="https://sass-lang.com/guide" target="_blank">Documentación SASS básico</a></li>
+            <li><a href="https://www.toptal.com/sass/css3-flexbox-sass-grid-tutorial" target="_blank">Flexbox y grid con SASS para Bootstarp</a></li>
+          </ul>
+          <header><h4>Herramientas de interés</h4></header>
+          <ul>
+              <li><a href="https://nodejs.org/es/" target="_blank">Node js</a></li>
+              <li><a href="https://sass-lang.com/" target="_blank">SASS</a></li>
+              <li><a href="https://www.w3schools.com/css/css3_flexbox.asp" target="_blank">W3Schools Flexbox</a></li>
+          
+            </ul>
+        </div>
+      </li>
+      <li>
+        <div class="collapsible-header"><i class="material-icons">hdr_auto</i>Material-Angular</div>
+        <div class="collapsible-body">
+          <header><h4>Documentaciones</h4></header>
+          <ul>
+            <li><a href="DocMaterialAngular.pdf" target="_blank">Documentación Material-Angular</a></li>
+          </ul>
+          <header><h4>Herramientas de interés</h4></header>
+          <ul>
+              <li><a href="https://material.angular.io/components/categories" target="_blank">Componentes Material-Angular</a></li>
+              <li><a href="https://www.tutorialesprogramacionya.com/angularya/detalleconcepto.php?punto=35&codigo=35&inicio=20" target="_blank">Enlazar Angular y Material</a></li>
+              <li><a href="https://material.angular.io/guide/schematics" target="_blank">Instalación y Generación de Código</a></li>
+          
+            </ul>
+        </div>
+      </li>
+    </ul>
+    </div>
+  </div>
+  </div>
 
+  <footer class="page-footer teal">
+    <div class="container">
+        Página de Rodrigo Mena
+    </div>
+    <br/>
+  </footer>
 
+  <!-- Importar los scripts de Materialize -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+  <!-- Inicializar el componente Collapsible -->
+  <script>
+    document.addEventListener('DOMContentLoaded', function() {
+      var elems = document.querySelectorAll('.collapsible');
+      var instances = M.Collapsible.init(elems);
+    });
+  </script>
+  <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+  <script src="js/materialize.js"></script>
+  <script src="js/init.js"></script>
 </body>
 
 </html>

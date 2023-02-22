@@ -62,7 +62,6 @@ nav a {
 }
 
 /* Estilos de las tarjetas */
-/* Estilos de las tarjetas */
 main {
 	display: flex;
 	flex-wrap: wrap;
@@ -96,7 +95,7 @@ main {
 	border-radius: 4px;
 }
 
-/* Estilos responsivos */
+/* Estilos responsives con media queries */
 @media (max-width: 767px) {
 	.tarjeta {
 		width: 100%;
@@ -109,6 +108,7 @@ main {
 	}
 }
 
+// Estilos del footer
 footer {
     background-color: $color-primario;
     color: $text-color-white;
@@ -148,6 +148,7 @@ footer {
     text-decoration: none;
   }
   
+  // Estilos responsive con media queries para el footer
   @media (max-width: 767px) {
     footer {
       font-size: $size-font-contenido;
@@ -201,6 +202,7 @@ footer {
     color: $text-color-white; /* color del icono */
   }
 
+  // Estilo sobre que afectará al contenedor de la tarjetas
  .contenedor-tarjetas{
     display: flex;
     flex-wrap: wrap;
